@@ -4,56 +4,39 @@ body {
     font-family: 'Roboto', sans-serif;
     color:#000;
     height: 100%;
-}
-
-header, nav, main, footer {
-    margin: 0 auto;
-    max-width: 45rem;
-    padding: 0.75rem;
+    grid-template-columns: ;
 }
 
 header {
     margin-top: 10px;
-    background-color: navy;
+    background-color: lightseagreen;
     color: #fff;
     text-align: center;
     padding: 1.0rem;
     font-family: 'Mulish', sans-serif;
 }
 
-header footer {
-    text-align: center;
-    background-color: navy;
-    color: #fff;
-}
-
-header img {
-    width: 200px;
-    height: auto;
-}
-
 h1 {
-    font-size: 1.5rem;
+    font-size: 3.0rem;
     margin: 0.15rem;
-    text-align: center;
 }
 
 h2 {
     margin: 1.25rem auto;
     max-width: 760px;
-    font-size: 1rem;
+    font-size: 2.50rem;
     text-shadow: 2px 2px 5px #000;
     border-bottom: 1px;
     margin-bottom: 0.5rem;
 }
 
-img {
-    float: top-left;
-    margin: 10px;
+p, a {
+    font-size: 2.0rem;
+    margin: 0.15rem;
 }
 
 footer {
-    background-color: navy;
+    background-color: lightseagreen;
     color: #fff;
     text-align: center;
 }
