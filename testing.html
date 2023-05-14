@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Course Portal</title>
+        <meta name="description" content="My Course Assignment Portal Page."/>
+        <link rel="stylesheet" href="styles/normalize.css"/>
+        <link rel="stylesheet" href="styles/small.css"/>
+        <link rel="stylesheet" href="styles/medium.css"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Roboto&display=swap" rel="stylesheet">
+    </head>
+
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size: 16px;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+header,
+footer {
+	background-color: #708080;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+
+header,
+nav,
+main,
+footer {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2rem;
+}
+h2 {
+	padding: .5rem;
+	color: #536878;
+}
+
+p {
+	padding: .5rem;
+}
+
+nav {
+	background-color: #36454f;
+	text-align: center;
+	box-shadow: 0 0 30px #333;
+	display: flex;
+	flex-direction: row;
+}
+
+nav div {
+	flex: 1 1 auto;
+}
+
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 0.9rem;
+}
+
+nav a:hover {
+	background-color: #708080;
+	color: yellow;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.85rem;
+}
+
+main .submenu {
+	margin: 1rem;
+	border: 1px solid #bbb;
+	padding: 1rem;
+	background-color: #eee;
+}
+
+.submenu ul {
+	margin-left: 2rem;
+}
+
+main picture {
+	display: none;
+	margin: 1rem;
+}
+
+main article {
+	margin: 1rem;
+}
+
+footer {
+	display: flex;
+	padding: 1rem;
+	justify-content: space-between;
+	font-weight: 700;
+}
+
+/***********************************************/
+/** Media Queries for larger views *************/
+/***********************************************/
+
+@media (min-width: 37.5em) {
+	nav {
+		flex-direction: row;
+	}
+	
+	nav a {
+		font-size: 1.1rem;
+	}
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	main picture {
+		display: block;
+	}
+}
+
+@media (min-width: 48em) {
+	nav a {
+		font-size: 1.3rem;
+	}
+}
+</style>
+
+
+<header>
+	<h1>Responsive Menu</h1>
+</header>
+<nav>
+	<div><a href="./">🏡 Home</a></div>
+	<div><a href="sandbox/">|Sandbox|</a></div>
+	<div><a href="references/">🙋🏼‍♂️ References</a></div>
+	<div><a href="project/">🥑 Term Project</a></div>
+	<div><a href="about/">🎵 About</a></div>
+</nav>
+<main>
+	<div class="submenu">
+		<h2>Assignment Demos</h2>
+		<ul>
+			<li>Lesson 152: <a href="#">The Tired Iguana</a></li>
+			<li>Lesson 204: <a href="#">Lewiston Capital</a></li>
+			<li>Lesson 233: <a href="#">Ground Flight</a></li>
+			<li>Lesson 419: <a href="#">Flex Not</a></li>
+			<li>Lesson 631: <a href="#">Gridly Gast</a></li>
+			<li>Lesson 777: <a href="#">Boeing Built</a></li>
+		</ul>
+	</div>
+	<picture>
+		<img src="https://placekitten.com/300/200" alt="A placeholder image" width="300" height="200">
+	</picture>
+	<article>
+		<h2>Description</h2>
+		<p>This pen demostrates flex in the header and main menu. A Grid is applied to the main area. The main navigation is using flex with basic settings. Shrink the view area by dragging the separator bar in the middle of this pen.</p>
+	</article>
+</main>
+<footer>
+	<span>&copy;<span id="©"></span>
+		<span> .:|:. Chris B. Snow .:|:.</span>
+		<span>Brigham Young University - Idaho .:|:.</span>
+		<span>WDD 230</span>
+</footer>
