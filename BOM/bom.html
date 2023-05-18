@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book of Mormon - Top 25</title>
+    <style>
+      #content {
+        margin: 10px auto;
+        max-width: 500px;
+        border: 1px solid;
+      }
+
+      #content div,
+      span {
+        background-color: rgb(248, 151, 230);
+        padding: 10px;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      li button {
+        font-size: 12px;
+        margin-left: 20px;
+        color: #666;
+      }
+
+      footer {
+        text-align: center;
+        border: 1px solid;
+        background-color: antiquewhite;
+      }
+
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body id="content">
+    <h1>📖 Book of Mormon - Top 25</h1>
+
+    <div>
+      <label for="item">Enter Book and Chapter:</label>
+      <input type="text" name="item" id="item" />
+      <button>Add Chapter</button>
+    </div>
+
+    <ul></ul>
+
+    <script>
+      const list = document.querySelector("ul");
+      const input = document.querySelector("input");
+      const button = document.querySelector("button");
+
+      button.addEventListener("click", () => {
+        const myItem = input.value;
+        input.value = "";
+
+        const listItem = document.createElement("li");
+        const listText = document.createElement("span");
+        const listBtn = document.createElement("button");
+
+        listItem.appendChild(listText);
+        listText.textContent = myItem;
+        listItem.appendChild(listBtn);
+        listBtn.textContent = "❌";
+        list.appendChild(listItem);
+
+        listBtn.addEventListener("click", () => {
+          list.removeChild(listItem);
+        });
+
+        input.focus();
+      });
+    </script>
+
+
+<footer>
+    Karen Avila Cortado | Book of Mormon - Top 25
+</footer>
+
+  </body>
+</html>
