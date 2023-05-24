@@ -1,1 +1,6 @@
-document.querySelector('#©').textContent = new Date(Date.now()).getFullYear();
+function toggleMenu() {
+    document.getElementById("navbutton").classList.toggle("open");
+}
+
+const x = document.getElementById("navbuton")
+x.onclick = toggleMenu;
