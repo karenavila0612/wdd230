@@ -5,4 +5,118 @@
         padding: 0.5rem 1rem;
     }
 
+    .maingrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 100%;
+        height: 100vh;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .event {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin: 10px;
+        background: radial-gradient(#eee, #368DFF);
+        text-align: center;
+    }
+
+    .heroimg {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        padding: 12px;
+    }
+
+    .hero {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;  
+        text-align: center;      
+    }
+
+    .close-btn {
+        position: right;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 200px;
+        height: 80px;
+        background: #01234f;
+        border: 1px solid rgba(0,0,0,.1);
+        padding: 1.5rem;
+        text-align: center;
+        color: white;
+        border: 2px solid #0C356B;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .weather {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2; 
+        margin: 10px;
+        background: radial-gradient(#eeee, #368DFF);
+        text-align: center;
+    }
+
+    .spotlight1 {
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 1; 
+        margin:10px;
+        background: radial-gradient(#eeee, #F2D0C6);
+        text-align: center;
+    }
+
+    .spotlight2 {
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 2; 
+        margin:10px;
+        background: radial-gradient(#eeee, #F2D0C6);
+        text-align: center;
+    }
+
+    .spotlight3 {
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 3; 
+        margin:10px;
+        background: radial-gradient(#eeee, #F2D0C6);
+        text-align: center;
+    }
+
+    .newsreleases {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        margin:10px;
+        border: 1px solid #0C356B;;
+    }
+
+    .join {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 3; 
+        margin:10px;
+        background: radial-gradient(#eeee, #368DFF);
+        text-align: center;
+    }
+
+
+
+
 } /*end large*/
