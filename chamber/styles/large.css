@@ -1,4 +1,4 @@
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 80em) {
     header {
         padding: 2px 2px;
     }
@@ -8,6 +8,7 @@
         margin: 0 auto;
     }
 
+    
     main {
         margin: 0 auto;
     }
@@ -83,4 +84,5 @@
         background-color: rgb(151, 151, 2);
     }
 
+    
 }
