@@ -1,0 +1,30 @@
+@media only screen and (min-width: 64rem) {
+    header {
+        padding: 40px 20px;
+    }
+
+    header, footer {
+        max-width: 100%;
+    }
+
+    main {
+        margin: 0 auto;
+    }
+
+    .container {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .hero-img {
+        background-color: aquamarine;
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+
+    .weather-card {
+        grid-column: 1/1;
+        
+    }
+
+}
