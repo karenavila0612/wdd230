@@ -1,11 +1,12 @@
 @media only screen and (min-width: 64rem) {
     header {
-        padding: 40px 20px;
+        padding: 2px 2px;
     }
 
     header, footer {
         max-width: 100%;
     }
+
 
     main {
         margin: 0 auto;
@@ -24,7 +25,58 @@
 
     .weather-card {
         grid-column: 1/1;
-        
+        grid-row: 2/3;
+        background-color: antiquewhite;
+        margin: 0.5rem;
+        border: 1px solid #bbb;
+        padding: 0.75rem 1rem;
+    }
+
+    .ribbon {
+        grid-column: 1/2;
+        grid-row: 1/1;
+        background-color: antiquewhite;
+        margin: 0.5rem;
+        border: 1px solid #bbb;
+        padding: 0.75rem 1rem;
+    }
+
+    .event {
+        grid-column: 1/1;
+        grid-row: 3/3;
+    }
+
+    .news {
+        grid-column: 2/3;
+        grid-row: 3/3;
+    }
+
+    .spot2 {
+        grid-column: 3/3;
+        grid-row: 1/4;
+    }
+
+    #hamButton {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    #time {
+        text-align: center;
+        color: white;
+        padding: 4px;
+        margin: 5px;
+        border-radius: 20px;
+        font-weight: bolder;
+        background-color: rgb(151, 151, 2)
     }
 
 }
