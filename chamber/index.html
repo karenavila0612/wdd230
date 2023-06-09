@@ -13,8 +13,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
+<!--Header Details Here-->
     <header>
         <div id="banner">
             <p>Come and join the Chamber! Meet and greet every Thursday, 7PM.</p>
@@ -42,15 +44,126 @@
         <nav>
             <button id="hamButton">&#9776</button>
             <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="feed.html">About</a></li>
+                <li><a href="about.html">About</a></li></li>
             </ul>
+
+            <div id="time">
+                <time></time>
+            </div>
         </nav>
     </header>
+
+<!--Main body of the page starts here-->
+<main>
+    <div class="container">
+        <div class="hero-image">
+            <picture>
+                <img src="images/heroimage.png" width="640" height="360" alt="hero image">
+            </picture>
+            <!--<div>Ratio:<span>small 1:1</span> | <span>Medium: 2:1</span> | <span>large: 2:2</span>-->
+                <h2 class="home-msg">Welcome to Cortado</h2>
+                <a class="invite" href="#">Join the Chamber</a>
+        </div>
+
+        <!--Weather Card-->
+        <div class="weather-card">
+            <h2>Weather in</h2>
+            <h2 calss="temp">°C</h2>
+            <p>Wind Speed</p>
+            <p>Wind Chill</p>
+            <p><span id="wind-speed">**</span></p>
+            <p><span id="wind-chill">**</span></p>
+            <div class="flex">
+                <img src="images/weather.png" alt="weatherlogo" class="icon">
+                <div class="description"></div>
+            </div>
+            <div id="wid">Wind:</div>
+            <div id="humidity">Humidity:</div>
+        </div>
+
+        <div class="ribbon">
+            <h2>Ribbon Cutting</h2>
+            <p>
+                Join us for the Grand Opening
+                of the Cortado Chamber of Commerce at the
+                Diamond Shack, 1PM
+            </p>
+        </div>
+
+        <!--Events-->
+        <div class="event">
+            <h2>Join Us</h2>>
+            <p>Discover the beauty and benefits of joining
+               CORTADO Chamber of Commerce! Let's Grow Together!</p>
+        </div>
+
+        <div class="news">
+            <h2>News Release</h2>
+            <p>
+                The Chamber works everyday to make sure the voice of the bussiness
+                community is present and heard in the media. 
+                Reporters: To speak with Chamber leaders and policy experts, or to be
+                added to our press list. For more information contact our press office at
+                cortado@chamber.com
+            </p>
+        </div>
+
+        <!--Spotlights-->
+        <div class="spot2">
+            <div class="one">
+                <h2 class="div1">MLGC Transport</h2>
+                <img id="taxi" src="images/transportvan.png" alt="van image">
+                <p id="oneliner">Better logistics solutions for you.</p>
+                <p id="number1">+6399999999 &bull; Website</p>
+            </div>
+
+            <div class="two">
+                <h2 class="div2">Code Primera</h2>
+                <img id="pen" src="images/pencil.png" alt="code image">
+                <p id="oneliner">An after school coding instructional program!</p>
+                <p id="number2">+6399999999 &bull; Website</p>
+            </div>
+
+            <div class="three">
+                <h2 class="div3">Build a Tree</h2>
+                <img id="tree" src="images/tree.png" alt="tree image">
+                <p id="plants">Over 1000 plants</p>
+                <p id="number3">+6399999999 &bull; Websit</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!--Footer details-->
+<footer id="footer1">
+    <picture>
+    <img class="footer-logo" src="images/chamber2logo.png" alt="chamber logo">
+    </picture>
+
+    <div class="contact-info">
+        <h3>Cortado Chamber of Commerce</h3>
+        <p>Makati City, Philippines 1000</p>
+    <div class="footings2">
+        <p>karenavila0612@byui.edu</p>
+        <p>+639369622254</p>
+        <a href="#" target="_blank">
+        <p class="locationpin">Location Map</p>
+         </a>
+    </div>
+    </div>
+</footer>
+
+<div id="footer2">
+    <p></p>&copy;2023 | Cortado Chamber of Commerce | Karen Avila Cortado | Last Updated: <span id="lastModified"></span>
+    <a id="map" href="site-map.html">Site Map</a>
+</div>
+
+<script src="scripts/chamber.js"></script> 
+<script src="scripts/windchill.js"></script>
+
 </body>
-
-
 </html>
