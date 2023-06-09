@@ -1,0 +1,9 @@
+@media only screen and (min-width: 55rem) {
+    header {
+        display: flex;
+    }
+
+    main {
+        margin: 0 auto;
+    }
+}
