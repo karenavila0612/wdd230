@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home &bull; Chamber of Commerce &bull; Abdul Mahl</title>
+  <meta name="description" content="Chamber of Commerce Randburg Home Page"/>
+  <link rel="shortcut icon" href="favicon.ico"/>
+  <link rel="stylesheet" href="styles/normalize.css"/>
+  <link rel="stylesheet" href="styles/base3.css"/>
+  <link rel="stylesheet" href="styles/medium3.css"/>
+  <link rel="stylesheet" href="styles/large3.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gruppo&family=Nanum+Gothic+Coding&display=swap"/>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="https://abdulmahl.github.io/wdd230/chamber/index.html">
+        <img id="header-logo" src="images/logo.webp" alt="logo-image"/>
+      </a>
+      <section class="headings1">
+        <h2>Randburg</h2>
+        <div>Chamber of Commerce</div>
+      </section>
+      <!-- Navigation for the large viewport -->
+      <nav class="largeView-nav">
+        <ul id="primaryNav1">
+          <li><a href="https://abdulmahl.github.io/wdd230/chamber/discover.html">Discover</a></li>
+          <li><a href="https://abdulmahl.github.io/wdd230/chamber/directory.html">Directory</a></li>
+          <li><a href="https://abdulmahl.github.io/wdd230/chamber/join.html">Join</a></li>
+          <li><a href="https://abdulmahl.github.io/wdd230/chamber/contactus.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="social">
+        <a href="https://web.facebook.com/groups/614438699061934/?_rdc=1&_rdr" target="_blank">
+          <img class="facebook" src="images/facebook.webp" alt="facebook-logo"/>
+        </a>
+        <a href="https://linkedin.com" target="_blank">
+          <img class="linkedin" src="images/linkedin.webp" alt="linkedin-logo"/>
+        </a>
+      </div>
+    </header>
+    <div class="dateAndTime"></div>
+    <!-- Navigation for the base and medium viewports -->
+    <nav>
+      <button id="hamburgerBtn"><span>&#9776;</span><span>x</span></button>
+      <ul id="primaryNav2">
+        <li><a href="https://abdulmahl.github.io/wdd230/chamber/discover.html">Discover</a></li>
+        <li><a href="https://abdulmahl.github.io/wdd230/chamber/directory.html">Directory</a></li>
+        <li><a href="https://abdulmahl.github.io/wdd230/chamber/join.html">Join</a></li>
+        <li><a href="https://abdulmahl.github.io/wdd230/chamber/contactus.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="hero">
+          <picture>
+            <source srcset="images/hero-medium.jpg"
+              media="(min-width: 500px) and (max-width: 799px)"/>
+            <source srcset="images/hero-large.jpg"
+              media="(min-width: 800px)"/>
+            <img src="images/hero-small.jpg" alt="neighbourhood-image"/>
+          </picture>
+          <div class="welcome-msg">Welcome to Randburg</div>
+          <a class="join-msg" href="https://abdulmahl.github.io/wdd230/chamber/join.html">Join the Chamber</a>
+        </div>
+        <div class="ribbon">
+          <h2>Ribbon Cutting</h2>
+          <h2 class="shack">💎 The Diamond Shack</h2>
+          <p class="shack-msg">
+            Join us for the grand opening of The Diamond Shack, Thursday @
+            1:00pm.
+          </p>
+          <div class="info">More info...</div>
+        </div>
+        <!-- Medium viewport news card -->
+        <div class="med-news-card">
+          <h2>News Release</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <!-- Medium viewport spotlights -->
+        <div class="med-spotlights">
+          <div class="first-spot">
+            <h2 class="co-name">Thankful Transport</h2>
+            <img
+              src="images/delivery-truck.webp"
+              alt="thankful-transport-logo"
+            />
+            <div class="slogan">"We get it there for you!"</div>
+            <div class="number">+999-9999-999 &bull; Website</div>
+          </div>
+          <div class="second-spot">
+            <h2 class="co-name">Code Primera</h2>
+            <img src="images/pencils.webp" alt="code-primera-logo"/>
+            <div class="slogan">
+              An after school coding instructional program!
+            </div>
+            <div class="number">+999-5555-666 &bull; Website</div>
+          </div>
+        </div>
+        <!-- Medium viewport join card -->
+        <div class="med-join-card">
+          <a href="https://abdulmahl.github.io/wdd230/chamber/join.html">
+            <h2 style="text-decoration: none;">Join Us</h2>
+          </a>
+          <p>
+            Discover how to join the chamber of commerce and how it will benefit
+            your organiztion!
+          </p>
+        </div>
+        <div class="med-ribbon-weather-card">
+          <div class="med-ribbon">
+            <h2>Ribbon Cutting</h2>
+            <h2 class="shack">💎 The Diamond Shack</h2>
+            <p class="shack-msg">
+              Join us for the grand opening of The Diamond Shack, Thursday @
+              1:00pm.
+            </p>
+            <div class="info">More info...</div>
+          </div>
+          <div class="med-weather-card">
+            <div class="weather">
+              <h2 class="city">Weather</h2>
+              <div class="flex">
+                <img
+                  class="weather-icon"
+                  src="images/04n.png"
+                  alt="icon"
+                />
+                <div class="description-med"></div>
+              </div>
+              <div class="wind-med"></div>
+              <div class="wind-chill-med"></div>
+            </div>
+          </div>
+        </div>
+        <div class="weather-card">
+          <div class="weather">
+            <h2 class="city">Weather</h2>
+            <div class="flex">
+              <img
+                class="weather-icon"
+                src="images/04n.png"
+                alt="icon"
+              />
+              <div class="description"></div>
+            </div>
+            <div class="wind"></div>
+            <div class="wind-chill"></div>
+          </div>
+        </div>
+        <div class="news-card">
+          <h2>News Release</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="join-card">
+          <a href="https://abdulmahl.github.io/wdd230/chamber/join.html">
+            <h2 style="color: black;">Join Us</h2>
+          </a>
+          <p>
+            Discover how to join the chamber of commerce and how it will benefit
+            your organiztion!
+          </p>
+        </div>
+        <div class="spotlights">
+          <div class="first-spot">
+            <h2 class="co-name">Thankful Transport</h2>
+            <img
+              src="images/delivery-truck.webp"
+              alt="thankful-transport-logo"
+            />
+            <div class="slogan">"We get it there for you!"</div>
+            <div class="number">+999-9999-999 &bull; Website</div>
+          </div>
+          <div class="second-spot">
+            <h2 class="co-name">Code Primera</h2>
+            <img src="images/pencils.webp" alt="code-primera-logo"/>
+            <div class="slogan">
+              An after school coding instructional program!
+            </div>
+            <div class="number">+999-5555-666 &bull; Website</div>
+          </div>
+          <div class="third-spot">
+            <h2 class="co-name">Code Primera</h2>
+            <img src="images/pencils.webp" alt="code-primera-logo"/>
+            <div class="slogan">
+              An after school coding instructional program!
+            </div>
+            <div class="number">+999-5555-666 &bull; Website</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <p><span class="label"></span><span class="visits"></span></p>
+    <!-- Footer -->
+    <footer id="top-footer">
+      <a href="https://abdulmahl.github.io/wdd230/chamber/index.html">
+        <img id="footer-logo" src="images/logo.webp" alt="logo-image"/>
+      </a>
+      <section class="footings1">
+        <h3>Randburg</h3>
+        <h3>Chamber of Commerce</h3>
+        <p>Corner Oak Road
+          and Sentrum Avenue, Randburg 2194</p>
+      </section>
+      <div class="footings2">
+        <p>mdu_abdul@icloud.com</p>
+        <p>+(27) 76900-1909</p>
+        <a
+          href="https://www.google.com/maps/dir//Randburg+Square+Pretoria+Ave+Ferndale,+Johannesburg+2194/@-26.0915105,28.0030464,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1e957493c5880c7f:0xf5433ad0c2a77dd1!2m2!1d28.0030464!2d-26.0915105?entry=ttu"
+          target="_blank">
+          <p class="location-pin">📍Location Map</p>
+        </a>
+      </div>
+    </footer>
+    <div class="bottom-footer">
+      <p>
+        &COPY; <span id="year"></span> Randburg Chamber <br/>
+        &bull; M. Abdul Mahlangu &bull; <br/>
+        WDD 230 Project
+      </p>
+      <p>Last Updated: <span id="dateTime"></span></p>
+    </div>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/windchill.js"></script>
+  </body>
+</html>

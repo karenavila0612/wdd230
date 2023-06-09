@@ -1,0 +1,295 @@
+@media only screen and (min-width: 768px) {
+    :root {
+      --lapis-lazuli: #42608a;
+      --jet: #2f2f2f;
+      --silver: #bfb5af;
+      --beige: #f3fae1;
+      --eerie-black: #0f1a12;
+      --flame: #ed5d31;
+      --gold-metalic: #d9b208;
+    }
+  
+    header,
+    nav,
+    .dateAndTime,
+    main,
+    footer,
+    .bottom-footer {
+      max-width: 768px;
+      margin: 0 auto;
+    }
+  
+    header {
+      padding: 30px 0;
+      gap: 5px;
+    }
+  
+    #header-logo {
+      width: 100px;
+      height: auto;
+      border-radius: 360px;
+    }
+  
+    .headings1 {
+      padding-top: 30px;
+      text-shadow: 0 0 30px var(--eerie-black);
+    }
+  
+    h2 {
+      font-size: 47px;
+    }
+  
+    .headings1 div {
+      font-size: 16px;
+    }
+  
+    .dateAndTime {
+      font-size: x-large;
+    }
+  
+    .social {
+      margin-left: auto;
+    }
+  
+    .facebook {
+      width: 43px;
+      height: auto;
+      border-radius: 360px;
+    }
+  
+    .linkedin {
+      width: 43px;
+      height: auto;
+      border-radius: 360px;
+      margin-left: 15px;
+    }
+  
+    .largeView-nav {
+      display: none;
+    }
+  
+    nav ul.open {
+      max-width: 100%;
+    }
+  
+    .hero {
+      position: relative;
+      margin: 10px 0;
+    }
+  
+    .hero img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .hero .welcome-msg {
+      position: absolute;
+      top: 45%;
+      left: 34%;
+      transform: translate(-50%, -50%);
+      font-size: 49px;
+      font-family: "monospace";
+      font-weight: bolder;
+    }
+  
+    .hero .join-msg {
+      left: 67%;
+      font-size: 27px;
+      font-family: "monospace";
+      font-weight: bolder;
+      color: var(--lapis-lazuli);
+      background-color: var(--gold-metalic);
+      padding: 10px 5px;
+      border-radius: 15px;
+    }
+  
+    .med-news-card {
+      display: revert;
+      background-color: var(--lapis-lazuli);
+      padding: 10px;
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .med-news-card h2 {
+      text-align: center;
+      padding: 25px;
+      font-family: "monospace";
+      color: var(--gold-metalic);
+      text-shadow: 0 10px 10px var(--eerie-black);
+    }
+  
+    .container .ribbon,
+    .news-card,
+    .spotlights,
+    .weather-card {
+      display: none;
+    }
+  
+    .med-spotlights {
+      display: flex;
+      background-color: var(--lapis-lazuli);
+      margin: 10px 0;
+      padding: 10px;
+    }
+  
+    .med-spotlights img {
+      width: 200px;
+      height: auto;
+    }
+  
+    .med-join-card {
+      display: revert;
+      background-color: var(--lapis-lazuli);
+      padding: 10px;
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .med-join-card h2 {
+      background-color: var(--gold-metalic);
+      color: var(--beige);
+      border-radius: 25px;
+      font-family: "monospace";
+    }
+  
+    .med-join-card p {
+      font-size: larger;
+      color: var(--eerie-black);
+      font-family: "monospace";
+      padding: 15px;
+    }
+  
+    .med-spotlights .co-name1 {
+      font-size: 30px;
+    }
+  
+    .med-spotlights .slogan {
+      border-bottom: 1px solid var(--gold-metalic);
+      padding-bottom: 15px;
+      margin: 15px;
+    }
+  
+    .med-ribbon {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid var(--jet);
+      padding: 10px;
+    }
+  
+    .med-ribbon h2 {
+      text-align: center;
+      color: var(--gold-metalic);
+      font-family: "monospace";
+      padding: 10px;
+    }
+  
+    .med-ribbon .shack {
+      padding-bottom: 20px;
+      color: var(--gold-metalic);
+      font-family: "monospace";
+    }
+  
+    .med-ribbon .shack-msg {
+      padding-bottom: 10px;
+      color: var(--beige);
+      text-align: center;
+    }
+  
+    .med-ribbon-weather-card {
+      display: flex;
+      gap: 5px;
+      padding: 5px;
+      margin: 10px 0;
+      background-color: var(--lapis-lazuli);
+    }
+  
+    .med-weather-card {
+      width: 65%;
+      height: auto;
+      margin: 0 auto;
+      border: 1px solid var(--jet);
+      padding: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .med-weather-card .wind-med,
+    .wind-chill-med {
+      padding: 5px;
+    }
+  
+    .med-weather-card .flex {
+      display: flex;
+      align-items: center;
+    }
+  
+    #top-footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--lapis-lazuli);
+    }
+  
+    #footer-logo {
+      width: 98px;
+      box-shadow: none;
+    }
+  
+    .footings1 {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+  
+    h3 {
+      padding-left: 4px;
+    }
+  
+    h3:nth-child(1) {
+      font-size: 2.8em;
+    }
+  
+    h3:nth-child(2) {
+      font-size: 1.2em;
+    }
+  
+    .footings2 {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+    }
+  
+    hr,
+    br {
+      display: none;
+    }
+  
+    .bottom-footer {
+      text-align: center;
+      border-top: 1px solid var(--jet);
+      padding: 20px;
+      background-color: var(--gold-metalic);
+    }
+  
+    .bottom-footer p:first-of-type {
+      font-weight: bolder;
+    }
+  
+    .bottom-footer p:nth-child(2) {
+      text-shadow: 0 0 3px var(--lapis-lazuli);
+      padding: 15px;
+      font-weight: bolder;
+    }
+  
+    .images-gallery {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .gallery:hover {
+      box-shadow: 0 0 10px var(--eerie-black);
+    }
+  }

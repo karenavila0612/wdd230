@@ -1,0 +1,328 @@
+@media only screen and (min-width: 992px) {
+    :root {
+      --lapis-lazuli: #42608a;
+      --jet: #2f2f2f;
+      --silver: #bfb5af;
+      --beige: #f3fae1;
+      --eerie-black: #0f1a12;
+      --flame: #ed5d31;
+      --gold-metalic: #d9b208;
+    }
+  
+    .banner {
+      font-size: large;
+    }
+  
+    header,
+    footer,
+    .bottom-footer {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  
+    header {
+      padding: 40px 20px;
+      gap: 10;
+    }
+  
+    #header-logo {
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 140px;
+    }
+  
+    .headings1 {
+      text-shadow: 0 0 10px var(--eerie-black);
+      margin-top: auto;
+      margin-bottom: 40px;
+      font-size: x-large;
+    }
+  
+    .headings1 div {
+      font-size: x-large;
+    }
+  
+    .facebook {
+      width: 49px;
+    }
+  
+    .linkedin {
+      width: 49px;
+    }
+  
+    #hamburgerBtn {
+      display: none;
+    }
+  
+    #primaryNav2 {
+      display: none;
+    }
+  
+    .largeView-nav {
+      display: revert;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: 20px;
+      font-size: large;
+    }
+  
+    nav ul#primaryNav1 {
+      display: flex;
+      margin-top: 50px;
+      margin-left: 25px;
+    }
+  
+    nav ul li a {
+      border: none;
+    }
+  
+    .dateAndTime {
+      background-color: var(--beige);
+      color: var(--lapis-lazuli);
+      font-size: xx-large;
+      text-shadow: 0 0 15px var(--gold-metalic);
+    }
+  
+    nav ul li a {
+      padding: 1.2rem 2.7vw;
+      color: var(--eerie-black);
+      font-weight: bolder;
+    }
+  
+    nav ul li a:hover {
+      background-color: var(--gold-metalic);
+      color: var(--lapis-lazuli);
+      text-decoration: overline;
+    }
+  
+    nav ul li.active a {
+      background-color: var(--gold-metalic);
+      color: var(--eerie-black);
+      text-shadow: 5px 5px 10px var(--eerie-black);
+    }
+  
+    .active a:hover {
+      text-shadow: none;
+    }
+  
+    .container .ribbon,
+    .weather-card,
+    .news-card,
+    .spotlights {
+      display: revert;
+    }
+  
+    .med-news-card,
+    .med-spotlights,
+    .med-join-card,
+    .med-ribbon-weather-card {
+      display: none;
+    }
+  
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .ribbon {
+      grid-column: 1 / 2;
+      grid-row: 1/2;
+      width: 300px;
+      height: 300px;
+      padding: 10px;
+    }
+  
+    .ribbon h2 {
+      padding-bottom: 10px;
+      color: var(--gold-metalic);
+      text-shadow: 0 0 20px var(--eerie-black);
+      font-family: "monospace";
+      font-size: 2rem;
+    }
+  
+    .shack {
+      padding-bottom: 20px;
+      color: var(--beige);
+      font-family: "monospace";
+    }
+  
+    .shack-msg {
+      padding-bottom: 10px;
+      color: var(--beige);
+    }
+  
+    .hero {
+      position: relative;
+    }
+  
+    .hero .welcome-msg {
+      position: absolute;
+      top: 45%;
+      left: 38%;
+      font-size: 33px;
+      font-family: "monospace";
+      font-weight: bolder;
+      color: var(--eerie-black);
+    }
+  
+    .hero .join-msg {
+      position: absolute;
+      top: 77%;
+      left: 50%;
+      font-size: 23px;
+    }
+  
+    .hero {
+      grid-column: 3 / 4;
+      grid-row: 1 / 4;
+      width: 500px;
+      height: 630px;
+    }
+  
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .co-name {
+      font-size: 1rem;
+      color: var(--lapis-lazuli);
+    }
+  
+    .spotlights {
+      background-color: var(--lapis-lazuli);
+      grid-column: 5 / 6;
+      grid-row: 1 / 6;
+      width: 300px;
+      height: 954px;
+      padding: 10px;
+    }
+  
+    .first-spot {
+      grid-column: 5 / 6;
+      width: 277px;
+      height: 308px;
+      border: 1px solid var(--beige);
+      background-color: var(--silver);
+    }
+  
+    .second-spot {
+      grid-column: 5 / 6;
+      width: 277px;
+      height: 308px;
+      border: 1px solid var(--beige);
+      background-color: var(--silver);
+    }
+  
+    .third-spot {
+      display: revert;
+      grid-column: 5 / 6;
+      width: 277px;
+      height: 308px;
+      border: 1px solid var(--beige);
+      background-color: var(--silver);
+      margin-left: 2px;
+      text-align: center;
+    }
+  
+    .news-card {
+      grid-column: 3 / 4;
+      grid-row: 4/6;
+      width: 500px;
+      height: 300px;
+      font-size: 15px;
+    }
+  
+    .join-card {
+      display: revert;
+      grid-column: 1 / 2;
+      grid-row: 4/6;
+      width: 300px;
+      height: 300px;
+      padding: 10px;
+      background-color: var(--lapis-lazuli);
+    }
+  
+    .weather-card {
+      grid-column: 1 / 2;
+      grid-row: 2/4;
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+    }
+  
+    #footer-logo {
+      width: 140px;
+      height: auto;
+    }
+  
+    .footings1 {
+      margin-right: 200px;
+      margin-bottom: 40px;
+    }
+  
+    .footings1 p {
+      text-align: left;
+    }
+  
+    h3:nth-child(1) {
+      font-size: 3.5em;
+      margin-top: 35px;
+    }
+  
+    h3:nth-child(2) {
+      font-size: 1.5em;
+    }
+  
+    .footings1 p {
+      font-size: x-large;
+    }
+  
+    .footings2 {
+      font-size: larger;
+      font-weight: bolder;
+      text-align: end;
+      margin-right: 185px;
+    }
+  
+    .bottom-footer {
+      display: block;
+      text-align: center;
+      border-top: 1px solid var(--jet);
+      padding: 20px;
+      background-color: var(--gold-metalic);
+    }
+  
+    .bottom-footer p {
+      font-size: x-large;
+    }
+  
+    .bottom-footer p:first-of-type {
+      font-weight: bolder;
+    }
+  
+    .bottom-footer p:nth-child(2) {
+      text-shadow: 0 0 3px var(--lapis-lazuli);
+      padding: 15px;
+      font-weight: bolder;
+    }
+  
+    .images-gallery {
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .gallery {
+      width: 400px;
+      height: auto;
+    }
+  
+    .gallery:hover {
+      box-shadow: 0 0 10px var(--eerie-black);
+    }
+  }

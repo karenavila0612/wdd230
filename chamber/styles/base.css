@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .gridarea {
@@ -55,8 +56,9 @@ header, nav, main, footer {
 }
 
 .navigation {
-  background-color: rgba(71, 2, 2, 0.778);
+  background-color: blue(71, 2, 2, 0.778);
   color: white;
+  text-decoration: none;
 }
 
 h1 {
