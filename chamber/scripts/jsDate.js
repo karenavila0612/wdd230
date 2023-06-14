@@ -1,6 +1,6 @@
 function toggleMenu() {
-    document.getElementById("navbutton").classList.toggle("open");
+    document.getElementsByClassName("navigation").classList.toggle("open");
 }
 
-const x = document.getElementById("navbuton")
+const x = document.getElementsById("hamButton")
 x.onclick = toggleMenu;

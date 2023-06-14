@@ -39,6 +39,8 @@
         margin: 0;
     }
 
+    nav ul.open {display: block;}
+
     nav ul li a {
         display: block;
         padding: .8rem 2vw;
