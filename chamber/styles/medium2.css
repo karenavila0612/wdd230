@@ -11,6 +11,11 @@
 
     nav ul {
         display: flex;
+        margin-left: 2vw;
+    }
+
+    nav ul li a {
+        border: none;
     }
 
     .page-heading h1 {
@@ -32,18 +37,19 @@
     }
 
     #hamButton {
+        display: none;
     }
     
-    .navigation {
+    #navigation {
         flex-direction: row;
     }
     
-    .navigation li {
+    #navigation li {
         display: block;
         flex: 1 1 auto;
     }
 
-    .navigation li a {
+    #navigation li a {
         text-decoration: none;
     }
     
