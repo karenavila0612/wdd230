@@ -1,19 +1,58 @@
 @media only screen and (min-width: 55rem) {
 
-    header, nav, main, footer {
-        max-width: 100%;
+    header, footer {
+        min-width: 100%;
         margin: 0 auto;
     }
 
-    header {
-        gap: 10px;
+    .primaryNav1 {
+        display: none;
     }
-    
+
+    nav ul {
+        display: flex;
+    }
+
     .page-heading h1 {
-        font-size: xx-large;
+        font-size: 1rem;
     }
     
     .page-heading div {
-        font-size: small;
+        font-size: large;
     }
+
+    #header-logo {
+        width: 100px;
+        height: auto;
+    }
+
+    .social {
+        margin-left: 80px;
+        gap: 15px;
+    }
+
+    #hamButton {
+    }
+    
+    .navigation {
+        flex-direction: row;
+    }
+    
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    .navigation li a {
+        text-decoration: none;
+    }
+    
+    #time {
+        text-align: center;
+        color: white;
+        padding: 4px;
+        margin: 5px;
+        border-radius: 20px;
+        font-weight: bolder;
+        background
 }
