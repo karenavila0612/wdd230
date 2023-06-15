@@ -1,0 +1,14 @@
+body {
+    display: block;
+    width: 700px;
+    margin: auto;
+    color: palevioletred;
+}
+
+h1 {
+    text-align: center;
+}
+
+img{
+    margin: 10px;
+}
