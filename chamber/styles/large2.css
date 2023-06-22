@@ -15,6 +15,7 @@
 
     .page-heading h1 {
         font-size: 3rem;
+        padding: 50px;
     }
     
     .page-heading div {
@@ -24,6 +25,7 @@
     #header-logo {
         width: 140px;
         height: auto;
+        padding: 15px;
     }
 
     .social {
@@ -172,5 +174,37 @@
     }
 
     */
+/*discovery CSS*/
+
+
+    .photo-card {
+        margin: 10px auto;
+        position: relative;
+        display: grid;
+        grid-template-columns: auto 2px;
+        min-width: 100%;
+    }
+
+    .photo-card h2 {
+        margin: 0 0 .5rem;
+        border-bottom: 1px solid #000;
+    }
+
+    .stats {
+        position: absolute;
+        top: 25px;
+        right: 50px;
+        background: radial-gradient(#eee, #4567aa);
+        border: 1px solid rgba(0,0,0,.1);
+        padding: 1.5rem;
+        box-shadow: 0 0 30px #333;
+        opacity: 0.8;
+        Margin: 1000px;
+    }
+
+    .stats span {
+        font-style: italic;
+        font-weight: 700;
+
 
 }

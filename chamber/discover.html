@@ -16,9 +16,6 @@
 </head>
 
 <body>
-<main>
-    
-</main>
 <!--Header Details Here-->
     <header class="header-grid">
         <div id="banner">
@@ -59,6 +56,100 @@
             </div>
         </nav>
     </header>
+
+    <main>
+        <div class="discover">
+            <h1>About Cortado</h1>
+            <div class="demographics">
+                <div class="user-card" id="user-input">
+                    <div class="card-content-wrapper">
+                        <input type="text" id="fname" placeholder="Enter your name here then press Enter" name="fname"><br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="user-card" id="user-input-display">
+                <div class="card-content-wrapper">
+                <h2 id="username">Welcome to Cortado</h2>
+                <p id="last-visit"></p>
+                <a href="#" onclick="editUserInfo()">Edit</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="demographics-card">
+            <div class="card-content-wrapper">
+                <p>Total Area</p>
+                <p>
+                    <span class="increase-number" number-info="619.57"></span>km²
+                </p>
+            </div>
+        </div>
+
+        <div class="demographics-card">
+            <div class="card-content-wrapper">
+                <p>Population</p>
+                <p>
+                    <span class="increase-number" number-info="13,484,462"></span>
+                </p>
+            </div>
+        </div>
+
+        <div class="photo">
+            <div class="location-card">
+                <a href="https://goo.gl/maps/vLQFSuBcWWQ6dYrw9">
+                    <img src="images/discover images/placeholder.jpg" data-src="images/discover images/mnl-zone.png" alt="Greater Manila" loading="lazy" width="700" height="550">
+                </a>
+                </div>
+        </div>
+
+        <div class="photo-card">
+            <h2>Taguig</h2>
+            <img src="images/discover images/placeholder.jpg" data-src="images/discover images/BCG.jpg" alt="Taguig" loading="lazy" width="700" height="550">
+            <section class="stats">
+                <h2>Taguig City</h2>
+                <p>Population: <span id="census">886,722 people</span></p>
+                <p>Origin: <span id="origin">Fishing Village</span></p>
+                <p>Location: <span id="location">Northwestern Shore of Lguna de Bay</span></p>
+                <p>Popularity: <span id="popularity">Bonifacio Global City, Financial Institutions</span></p>
+            <p class="left-alg">
+                Taguig (Tagalog: [taˈɡiɡ]), officially the City of Taguig (Filipino: Lungsod ng Taguig), is a 1st class highly urbanized city in Metro Manila, Philippines.
+            </p>
+            </section>
+        </div>
+
+
+
+    </main>
+
+
+    <!--Footer details-->
+<footer id="footer1">
+    <picture>
+    <img class="footer-logo" src="images/chamber2logo.png" alt="chamber logo">
+    </picture>
+
+    <div class="contact-info">
+        <h3>Cortado Chamber of Commerce</h3>
+        <p>Makati City, Philippines 1000</p>
+    <div class="footings2">
+        <p>karenavila0612@byui.edu</p>
+        <p>+639369622254</p>
+        <a href="#" target="_blank">
+        <p class="locationpin">Location Map</p>
+         </a>
+    </div>
+    </div>
+</footer>
+
+<div id="footer2">
+    <p></p>&copy;2023 | Cortado Chamber of Commerce | Karen Avila Cortado | Last Updated: <span id="lastModified"></span>
+    <a id="map" href="site-map.html">Site Map</a>
+</div>
+
+<script src="scripts/chamber.js"></script> 
+<script src="scripts/windchill.js"></script>
+<script src="scripts/lazyload.js"></script>
 
     </body>
     </html>
