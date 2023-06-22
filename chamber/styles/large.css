@@ -1,88 +1,153 @@
-@media only screen and (min-width: 80em) {
-    header {
-        padding: 2px 2px;
-    }
+@media only screen and (min-width: 990px) {
+	:root {
+		--white-space: 10px;
+	}
 
-    header, footer {
-        max-width: 100%;
-        margin: 0 auto;
-    }
+	/**********/
+	/* HEADER */
+	/**********/
 
-    
-    main {
-        margin: 0 auto;
-    }
+	header {
+		grid-template-columns: 90% 10%;
+	}
 
-    .container {
-        grid-template-columns: 1fr 2fr 1fr;
-        /*grid-template-rows: 300px 300px 300px;*/
-        gap: 5px;
-        align-items: center;
-        justify-content: center;
-    }
+	header .header-title-wrapper {
+		display: grid;
+		grid-template-columns: 80px 190px 1fr;
+	}
 
-    .hero-img {
-        background-color: aquamarine;
-        grid-column: 2/4;
-        grid-row: 1/4;
-        /*margin-top: 50px;*/
-    }
+	header .header-menu {
+		display: none;
+	}
 
-    .weather-card {
-        grid-column: 1/2;
-        grid-row: 3/4;
-        background-color: antiquewhite;
-        margin: 0.5rem;
-        border: 1px solid #bbb;
-        padding: 0.75rem 1rem;
-    }
+	header .hamburger-menu {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		align-self: center;
+		align-items: flex-end;
+		justify-self: flex-end;
+		width: 90%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0);
+		padding: 0;
+	}
 
-    .ribbon {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        background-color: antiquewhite;
-        margin: 0.5rem;
-        border: 1px solid #bbb;
-        padding: 0.75rem 1rem;
-    }
+	header .hamburger-menu ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-content: stretch;
+		justify-content: center;
+		margin: 0;
+		height: 40px;
+		width: 100%;
+	}
+	
+	.hamburger-menu ul li {
+		width: 16%;
+		transition: .35s;
+	}
 
-    .join {
-        grid-column: 1/2;
-        grid-row: 5/6;
-    }
+	.hamburger-menu ul li:hover {
+		margin-left: -5px;
+		width: 19%;
+	}
 
-    .spot2 {
-        grid-column: 5/6;
-        grid-row: 1/6;
-    }
+	header .hamburger-menu ul a:first-child {
+		border: none;
+	}
 
-    .news {
-        grid-column: 2/4;
-        grid-row: 5/6;
-    }
+	header .hamburger-menu ul a {
+		padding: 0.82rem;
+		border: none;
+		color: var(--font-color);
+	}
 
-    #hamButton {
-        display: none;
-    }
+	.header-menu a:hover {
+		background-color: var(--warn);
+		color: var(--bg--contrast-light-01);
+	}
 
-    .navigation {
-        flex-direction: row;
-    }
+	.header-title-title {
+		width: auto;
+	}
 
-    .navigation li {
-        display: block;
-        flex: 1 1 auto;
-    }
+	.header-social {
+		padding: 0;
+	}
 
-    #time {
-        text-align: center;
-        color: white;
-        padding: 4px;
-        margin: 5px;
-        border-radius: 20px;
-        font-weight: bolder;
-        background-color: rgb(151, 151, 2);
-    }
+	/******************/
+	/* MAIN HOME-PAGE */
+	/******************/
+	.home-main {
+		margin: 0 calc(var(--white-space) * 2);
+		grid-template-columns: 1fr 2.1fr 1fr;
+		grid-template-rows: repeat(3, 1fr);
+		grid-template-areas:
+			"main-event main-hero main-spotlights"
+			"main-weather main-hero main-spotlights"
+			"main-join main-news main-spotlights"
+		;
+	}
 
-    
+	.home-main .hero {
+		height: 100%;
+	}
+
+	.home-main .event {
+		
+		grid-area: main-event;
+		display: block;
+		text-align: center;
+	}
+
+	.home-main .event-picture-wrapper {
+		height: 120px;
+		width: 200px;
+		margin: 0 auto;
+		margin-bottom: var(--white-space);
+	}
+
+	.home-main .event p {
+		display: none;
+	}
+
+	.home-main .event button {
+		width: 70%;
+	}
+
+	.home-main .weather {
+		grid-area: main-weather;
+	}
+
+	.home-main section, .spotlight, .spotlights-wrapper {
+		height: 100%;
+	}
+
+	.home-main .spotlights-wrapper {
+		height: calc(600px + var(--white-space) * 6);
+		flex-direction: column;
+		padding: calc(var(--white-space) * 1.2);
+		gap: calc(var(--white-space) / 2);
+	}
+
+	.home-main .spotlights-wrapper .spotlight {
+		width: 100%;
+	}
+
+	.home-main .spotlights-wrapper .spotlight:last-child {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		gap: var(--white-space);
+		background-color: var(--font-color);
+		color: var(--bg--contrast-light-01);
+	}
+
+	.home-main .spotlights-wrapper .spotlight picture:nth-child(2) img {
+		height: 65px;
+	}
+	
 }

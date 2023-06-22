@@ -1,17 +1,23 @@
-const celcTemp = document.getElementById("temprature").innerHTML;
-const speedinKilometers = document.getElementById("wind-speed").innerHTML;
-// celcius to fahrenheints...............................
-const fahrTemp = (celcTemp * 1.8) +32;
-const speedmiles = speedinKilometers / 1.609;
-// calculate wind chill....................
+const celciusTemperature = document.getElementById('temperature').innerText;
+const speedKilometers = document.getElementById('wind-speed').innerText;
+
+// Celsius to Fahrenheit
+const fahrenheitTemperature = (celciusTemperature * 1.8) + 32;
+// Kilometers per hour
+const speedMiles = speedKilometers / 1.609;
+
+// wind chill
 let windchill;
-if (fahrTemp <= 50 && speedmiles > 3){
-    windchill = 35.74 + (0.6215 * fahrTemp * Math.pow(speedmiles, 0.16));
-    console.log(windchill);
-    windchill = ((windchill - 32) * (5/9)).toFixed(0) + " °C ";
-    console.log(windchill);
+if (fahrenheitTemperature <= 50 && speedMiles > 3) {
+  windchill =  35.74 + (0.6215 * fahrenheitTemperature) -
+    (35.75 * Math.pow(speedMiles, 0.16)) + (0.4275 * fahrenheitTemperature *
+    Math.pow(speedMiles, 0.16));
+  windchill = ((windchill - 32) * (5 / 9)).toFixed(0) + ' °C';
 } else {
-    windchill = "N/A";
+  windchill = 'N/A';
 }
-// fahrenheits to celcius
-document.getElementById("windchill").innerHTML = windchill;
+
+// Fahrenheit to Celsius
+
+document.getElementById('windchill').innerText = windchill;
+

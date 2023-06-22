@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cortado Chamber of Commerce</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/base2.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!--Header Details Here-->
+    <div calss="menu-background" onclick="toggleMenu()"></div>
+    <header>
+        <div class="announcement-banner" id="announcement-banner">
+            <p>Come and join the Chamber! Meet and greet every Thursday, 7PM.</p>
+        </div>
+        
+        <div class="header-title-wrapper">
+            <img class="header-logo-center" src="images/chamber2logo.png" alt="sitelogo" width="75" height="75">
+            <div class="header-title-title">
+                <h1>Cortado</h1>
+                <p class="header-subtitle">Chamber of Commerce</p>
+            </div>
+        </div>
+
+        <div class="hamburger-menu">
+            <ul>
+                <li><a href="index2.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+
+        <div class="header-social-wrapper">
+            <div class="header-social">
+                <img src="images/facebook.png" alt="faccebook" width="30" height="30">
+                <img src="images/twitter.png" alt="faccebook" width="30" height="30">
+            </div>
+
+            <div class="header-menu center">
+                <button id="menu-button" class="menu-button" onclick="toggleMenu();" aria-label="Main Menu">
+                    <svg viewBox="0 0 100 100">
+                      <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,
+                        29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,
+                        77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,
+                        81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,
+                        25.000058" />
+                      <path class="line line2" d="M 20,50 H 80" />
+                      <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,
+                        70.999954 94.498839, 71.182648 94.532987,33.288669 94.543142,
+                        22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,
+                        18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,
+                        74.999942" />
+                    </svg>
+                  </button> 
+                  <div class="hamburger-menu">
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="discover.html">Discover</a></li>
+                      <li><a href="directory.html">Directory</a></li>
+                      <li><a href="">Join</a></li>
+                      <li><a href="">Contact</a></li>
+                      <li><a href="../">Main</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+
+        <div class="header-date center">
+            <span id="header-date" class="center"></span>
+        </div>
+
+        <div id="time">
+            <time></time>
+        </div>
+
+        </header>
+
+
+        <!--<div class="social">
+        <!--<span id="year"></span>
+        <a href="https://twitter.com" target="_blank">
+            <img class="tw" src="images/twitter.png" alt="twitter logo">
+        </a>
+
+        <a href="https://facebook.com" target="_blank">
+            <img class="fb" src="images/facebook.png" alt="facebook logo">
+        </a>
+        </div>-->
+
+       <!-- <div class="hamburger-menu">
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li></li>
+            </ul>
+        </div>
+
+            </div>
+        </nav>
+    </header> -->
+
+<!--Main body of the page starts here-->
+<main class="home-main">
+    <section class="hero">
+        <picture>
+            <source media="(min-width: 990px)" srcset="images/heroimage.png">
+            <source media="(min-width: 650px)" srcset="images/heroimage.png">
+            <img src="images/heroimage.png" alt="Business People Discussing">
+        </picture>
+        <div class="hero-wrapper">
+            <h2>Welcome to Cortado</h2>
+            <button>Join the Chamber</button>
+        </div>
+    </section>
+
+    <section class="event">
+        <h2>Ribbon Cutting</h2>
+        <p>
+            Join us for the Grand Opening
+            of the Cortado Chamber of Commerce at the
+            Diamond Shack, 1PM
+        </p>
+        <div class="event-picture-wrapper">
+            <picture>
+                <img src="images/RibbonTransparent.png" alt="Ribbon Image" height="120">
+            </picture>
+        </div>
+        <button>For more information, click here.</button>
+    </section>
+
+    <section class="weather">
+        <h2>Weather</h2>
+        <div class="weather-separator-01">
+            <picture>
+                <img src="images/weather.png" alt="weather image">
+            </picture>
+            <p><span id="temperature">-20</span>°C</p>
+        </div>
+        <div class="weather-separator-02">
+            <p><strong>Partly Cloudy</strong></p>
+            <hr>
+            <div class="weather-separator-03">
+                <p>Wind Speed:</p>
+                <p>Wind Chill:</p>
+                <p><span id="wind-speed">55</span> km/h</p>
+                <p><span id="windchill">N/A</span></p>
+              </div>
+            </div>
+    </section>
+
+    <section class="news">
+        <h2>News Release</h2>
+        <p>
+            The Chamber works everyday to make sure the voice of the bussiness
+            community is present and heard in the media. 
+            Reporters: To speak with Chamber leaders and policy experts, or to be
+            added to our press list. For more information contact our press office at
+            cortado@chamber.com
+        </p>
+    </section>
+
+    <section class="Join">
+        <h2>Join Us</h2>>
+        <button>Join Us!</button>
+        <p>Discover the beauty and benefits of joining
+               CORTADO Chamber of Commerce! Let's Grow Together!</p>
+    </section>
+
+    <div class="spotlights-wrapper">
+        <div class="spotlight">
+            <picture>
+                <img src="images/transportvan.png"  alt="Taxi image">
+            </picture>
+                <div class="article-separator">
+                    <p class="article-small-p">Better logistics solutions for you.</p>
+                    <hr>
+                    <p class="article-small-p">+6399999999 &bull; Website</p>
+                </div>
+        </div>
+    
+
+    <div class="spotlight">
+        <picture>
+            <img id="pen" src="images/pencil.png" alt="code image">
+        </picture>
+            <p class="article-small-p">An after school coding instructional program!</p>
+            <p class="article-small-p">+639999 9999 &bull; Website</p>
+    </div>
+
+    <div class="spotlight">
+        <picture>
+            <img id="tree" src="images/tree.png" alt="tree image">               
+        </picture>   
+            <p class="article-small-p">Over 1000 plants</p>
+            <p class="article-small-p">+6399999999 &bull; Website</p>
+    </div>
+</div>
+
+</main>
+
+<!---
+    <div class="container">
+        <div class="hero-image">
+            <picture class="herophoto">
+                <h2 class="home-msg">Welcome to Cortado</h2>
+                <img src="images/heroimage.png" alt="hero image">
+            </picture>
+            <!--<div>Ratio:<span>small 1:1</span> | <span>Medium: 2:1</span> | <span>large: 2:2</span>-->
+               <!-- <a class="invite" href="#">Join the Chamber</a>
+        </div> 
+
+        <!--Weather Card
+        <div class="weather-card">
+            <h2>Weather in</h2>
+            <h2 calss="temp">°C</h2>
+            <p>Wind Speed</p>
+            <p>Wind Chill</p>
+            <p><span id="wind-speed">**</span></p>
+            <p><span id="wind-chill">**</span></p>
+            <div class="flex">
+                <img src="images/weather.png" alt="weatherlogo" class="icon">
+                <div class="description"></div>
+            </div>
+            <div id="wid">Wind:</div>
+            <div id="humidity">Humidity:</div>
+        </div>
+
+        <div class="ribbon">
+            <h2>Ribbon Cutting</h2>
+            <p>
+                Join us for the Grand Opening
+                of the Cortado Chamber of Commerce at the
+                Diamond Shack, 1PM
+            </p>
+        </div>
+
+        <!--Events-
+        <div class="join">
+            <h2>Join Us</h2>>
+            <p>Discover the beauty and benefits of joining
+               CORTADO Chamber of Commerce! Let's Grow Together!</p>
+        </div>
+
+        <div class="news">
+            <h2>News Release</h2>
+            <p>
+                The Chamber works everyday to make sure the voice of the bussiness
+                community is present and heard in the media. 
+                Reporters: To speak with Chamber leaders and policy experts, or to be
+                added to our press list. For more information contact our press office at
+                cortado@chamber.com
+            </p>
+        </div>
+
+        <!--Spotlights
+        <div class="spot2">
+            <div class="one">
+                <h2 class="div1">MLGC Transport</h2>
+                <img id="taxi" src="images/transportvan.png" alt="van image">
+                <p id="oneliner">Better logistics solutions for you.</p>
+                <p id="number1">+6399999999 &bull; Website</p>
+            </div>
+
+            <div class="two">
+                <h2 class="div2">Code Primera</h2>
+                <img id="pen" src="images/pencil.png" alt="code image">
+                <p id="oneliner">An after school coding instructional program!</p>
+                <p id="number2">+6399999999 &bull; Website</p>
+            </div>
+
+            <div class="three">
+                <h2 class="div3">Build a Tree</h2>
+                <img id="tree" src="images/tree.png" alt="tree image">
+                <p id="plants">Over 1000 plants</p>
+                <p id="number3">+6399999999 &bull; Website</p>
+            </div>
+        </div>
+    </div>
+</main> -->
+
+
+
+<!--Footer details-->
+<footer id="footer1">
+    <picture>
+    <img class="footer-logo" src="images/chamber2logo.png" alt="chamber logo" height="30">
+    </picture>
+
+    <div class="contact-info">
+        <h3>Cortado Chamber of Commerce</h3>
+        <p>Makati City, Philippines 1000</p>
+    <div class="footings2">
+        <p>karenavila0612@byui.edu</p>
+        <p>+639369622254</p>
+        <a href="#" target="_blank">
+        <p class="locationpin">Location Map</p>
+         </a>
+    </div>
+    </div>
+</footer>
+
+<div id="footer2">
+    <p></p>&copy;2023 | Cortado Chamber of Commerce | Karen Avila Cortado | Last Updated: <span id="lastModified"></span>
+    <a id="map" href="site-map.html">Site Map</a>
+</div>
+
+<script src="scripts/chamber.js"></script> 
+<script src="scripts/windchill.js"></script>
+<script src="scripts/scripts.js"></script>
+
+</body>
+</html>
