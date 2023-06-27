@@ -749,7 +749,7 @@ header .expanded {
   font-size: 2.6rem;
 }
 
-.discover .photo-card {
+.discover .photo {
   display: flex;
   flex-direction: column;
   gap: var(--white-space);
@@ -798,6 +798,7 @@ header .expanded {
 .discover .photo-card:nth-child(odd) {
   background-color: var(--primary01);
   color: var(--contrast-font-color02);
+  align-items: center;
 }
 
 .discover .photo-card:nth-child(3) a {
@@ -817,7 +818,7 @@ header .expanded {
   max-width: 700px;
 }
 
-.discover .photo-card .left-alg-p {
+.discover .photo-card p {
   text-align: left;
 }
 
