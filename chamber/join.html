@@ -14,6 +14,62 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Roboto&display=swap" rel="stylesheet">
 </head>
+<style>
+#join-form {
+    background-color: lightblue;
+}
+    table {
+    margin: 2em auto;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+td {
+    padding: 0.5em 1em;
+    border: 1px solid;
+}
+
+th {
+    background-color: lightblue;
+    font-size: 1.3em;
+    color: black;
+    border: 1px solid darkblue;
+}
+
+thead th{
+    padding: 0.8em 1.3em;
+    font-weight: bolder;
+}
+
+th:first-child {
+    background-color: darkgrey;
+    border: none;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: lightblue;
+}
+
+tbody {
+    font-weight: bold;
+}
+
+tbody tr td {
+    padding: 0.5rem;
+    border: 1px solid darkblue;
+}
+
+.xmark {
+    color: navy;
+}
+
+.check {
+    color: darkgreen;
+}
+
+
+</style>
 
 <body>
 
@@ -89,7 +145,115 @@
         </header>
 
 <main>
+    <div id="join-form">
+        <h1> Join Cortado Chamber of Commerce</h1>
+        <br>
+        <br>
+        <form id="form" method="get" action="thanks.html">
+            <fieldset><br>
+                <legend>Hi! Welcome to Cortado! Happy to serve you!</legend>
+            <label>First Name:<div id="asterisk">*</div>
+                <input type="text" class="firstname" placeholder="Input your first name" name="firstname" required>
+            </label><br>
+            <br>
+            <label>Last Name:<div id="asterisk">*</div>
+                <input type="text" class="lastname" placeholder="Input your last name" name="lastname" required>
+            </label><br>
+            <br>
+            <label>Address:<div id="asterisk">*</div>
+                <input type="text" class="streetname" placeholder="Street Number and Name" name="streetname" required>
+                <input type="text" class="municipalityname" placeholder="Municipality" name="municipalityname" required><br>
+                <br><input type="text" class="provincename" placeholder="Province" name="provincename" required>
+            </label><br>
+            <br>
+            <label>Business Name:<div id="asterisk">*</div>
+                <input type="text" class="businessname" placeholder="Business/Company Name" name="businessname" required>
+            </label><br>
+            <br>
+            <label class="business-description">Briefly describe your business:
+                <br><textarea id="businessDescription" name="businessDescription" rows="4" cols="50" required></textarea>
+              </label>
+            <br>
+            <br>
+            <label>Position in the Company:<div id="asterisk">*</div>
+                <input type="text" class="position" placeholder="Input your position" name="position" required>
+            </label><br>
+            <br>
+            <br>
+            <label>Membership Level Applying For:<div id="asterisk">*</div>
+                <select class="level" name="level" required>
+                    <option value="0">Basic Package</option>
+                    <option value="0">Bronze Package</option>
+                    <option value="0">Silver Package</option>
+                    <option value="0">Gold Package</option>
+                </select>
+            </label><br>
 
+            <br>
+            <div class="table-lrg">
+                <table>
+                  <thead>
+                      <tr>
+                                                <th class="subscriptions" colspan="5" scope="colgroup">Chamber Membership Subscriptions</th>
+                      </tr>
+                      <tr class="categories">
+                        <th class="top" scope="col"></th>
+                        <th scope="col">Basic $0.00</th>
+                        <th scope="col">Bronze $5.95</th>
+                        <th scope="col">Silver $8.45</th>
+                        <th scope="col">Gold $10.00</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td class="pack-name">Activity Notifications</td>
+                          <td><div class="checkmark">&#10004;</div></td>
+                          <td><div class="checkmark">&#10004;</div></td>
+                          <td><div class="checkmark">&#10004;</div></td>
+                          <td><div class="checkmark">&#10004;</div></td>
+                      </tr>
+                      <tr>
+                          <td class="pack-name">Site Advertising</td>
+                          <td><div class="crossmark">&#10060;</div></div></td>
+                          <td><div class="checkmark">&#10004;</div></td>
+                          <td><div class="checkmark">&#10004;</div></td>
+                          <td><div class="checkmark">&#10004;</div></td>
+                      </tr>
+                      <tr>
+                          <td class="pack-name">Sales & Training</td>
+                          <td><div class="crossmark">&#10060;</div></td>
+                          <td><div class="crossmark">&#10060;</div></td>
+                          <td><div class="checkmark">&#10004;</div></td>
+                          <td><div class="checkmark">&#10004;</div></td>
+                      </tr>
+  
+                      <tr>
+                        <td class="pack-name">Exclusive Events</td>
+                        <td><div class="crossmark">&#10060;</div></td>
+                        <td><div class="crossmark">&#10060;</div></td>
+                        <td><div class="crossmark">&#10060;</div></td>
+                        <td><div class="checkmark">&#10004;</div></td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+                
+                <label class="checkbox"><input class="box" type="checkbox" name="checkbox" value="mark" required> By checking this box you agree to the terms.</label>
+              </div>
+
+
+
+            </div>
+
+        </fieldset>
+        <br>
+        <br>
+        <input class="submitBtn" type="submit" value="Submit My Application">
+        
+    
+        </fieldset>
+        </form>
+    </div>
 
 
 </main>
