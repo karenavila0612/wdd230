@@ -1,3 +1,27 @@
+
+:root {
+  /* theme font */
+  --font: "Rubik", Arial, 'Trebuchet MS';
+  /* theme colors */
+  --primary01: #0a0443;
+  --primary02: #2c2292;
+  --primary03: #3c38e5;
+  --primary03-opaque: #2624c9;
+  --secondary01: #00b5b6;
+  --secondary02: #00e5df;
+  --warn: #f1a500;
+  --warn-opaque: #e49c00;
+  /* default border radius */
+  --default-border-radius: 4px;
+  /* extra colors */
+  --font-color: #1b1b1b;
+  --contrast-font-color01: #fff;
+  --contrast-font-color02: #c4c4c4;
+  --bg--contrast-light-01: #ebebeb;
+  /* spacing */
+  --white-space: 10px;
+}
+
 /*
 
 :root {
@@ -653,11 +677,11 @@ header .expanded {
   gap: var(--white-space);
   padding: var(--white-space);
   text-align: center;
-  max-width: 900px;
+  min-width: 900px;
   margin: 0 auto;
 }
 
-.discover .demographics {
+.discover .demographics-card {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -803,7 +827,7 @@ header .expanded {
   min-width: 160px;
 }
 
-.discover .photo-card img[data-image] {
+.discover .photo-card img[data-src] {
   filter: blur(4px);
   border-radius: 0px 0px;
   width: 100%;
