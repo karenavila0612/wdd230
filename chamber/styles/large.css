@@ -8,12 +8,14 @@
 	/**********/
 
 	header {
-		grid-template-columns: 90% 10%;
+		grid-template-columns: 20% 60% 20%;
+        min-width: 100%;
 	}
 
 	header .header-title-wrapper {
 		display: grid;
 		grid-template-columns: 80px 190px 1fr;
+        margin: 20px;
 	}
 
 	header .header-menu {
@@ -39,7 +41,7 @@
 		flex-wrap: wrap;
 		align-content: stretch;
 		justify-content: center;
-		margin: 0;
+		margin-bottom: 0;
 		height: 40px;
 		width: 100%;
 	}
@@ -47,6 +49,7 @@
 	.hamburger-menu ul li {
 		width: 16%;
 		transition: .35s;
+        font-size: 28px;
 	}
 
 	.hamburger-menu ul li:hover {
@@ -75,6 +78,8 @@
 
 	.header-social {
 		padding: 0;
+        align-items: left;
+        margin-left: 80px;
 	}
 
 	/******************/

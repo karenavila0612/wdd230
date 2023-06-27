@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce</title>
+    <title>Cortado Chamber of Commerce</title>
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium2.css">
-    <link rel="stylesheet" href="styles/large2.css">
+    <link rel="stylesheet" href="styles/base2.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,45 +16,76 @@
 </head>
 
 <body>
+
 <!--Header Details Here-->
-    <header class="header-grid">
-        <div id="banner">
+    <div calss="menu-background" onclick="toggleMenu()"></div>
+    <header>
+        <div class="announcement-banner" id="announcement-banner">
             <p>Come and join the Chamber! Meet and greet every Thursday, 7PM.</p>
         </div>
         
-        <div class="hero">
-            <img id="header-logo" src="images/chamber2logo.png" alt="sitelogo">
-        </div>
-
-        <div class="page-heading">
-            <h1>Cortado Chamber of Commerce</h1>
-        </div>
-
-        <div class="social">
-        <!--<span id="year"></span>-->
-        <a href="https://twitter.com" target="_blank">
-            <img class="tw" src="images/twitter.png" alt="twitter logo">
-        </a>
-
-        <a href="https://facebook.com" target="_blank">
-            <img class="fb" src="images/facebook.png" alt="facebook logo">
-        </a>
-        </div>
-
-        <nav>
-            <button id="hamButton">&#9776</button>
-            <ul class="navigation">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about.html">About</a></li></li>
-            </ul>
-
-            <div id="time">
-                <time></time>
+        <div class="header-title-wrapper">
+            <img class="header-logo-center" src="images/chamber2logo.png" alt="sitelogo" width="75" height="75">
+            <div class="header-title-title">
+                <h1>Cortado</h1>
+                <p class="header-subtitle">Chamber of Commerce</p>
             </div>
-        </nav>
+        </div>
+
+        <div class="hamburger-menu">
+            <ul>
+                <li><a href="index2.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+
+        <div class="header-social-wrapper">
+            <div class="header-social">
+                <img src="images/facebook.png" alt="faccebook" width="30" height="30">
+                <img src="images/twitter.png" alt="faccebook" width="30" height="30">
+            </div>
+
+            <div class="header-menu center">
+                <button id="menu-button" class="menu-button" onclick="toggleMenu();" aria-label="Main Menu">
+                    <svg viewBox="0 0 100 100">
+                      <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,
+                        29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,
+                        77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,
+                        81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,
+                        25.000058" />
+                      <path class="line line2" d="M 20,50 H 80" />
+                      <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,
+                        70.999954 94.498839, 71.182648 94.532987,33.288669 94.543142,
+                        22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,
+                        18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,
+                        74.999942" />
+                    </svg>
+                  </button> 
+                  <div class="hamburger-menu">
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="discover.html">Discover</a></li>
+                      <li><a href="directory.html">Directory</a></li>
+                      <li><a href="">Join</a></li>
+                      <li><a href="">Contact</a></li>
+                      <li><a href="../">Main</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+
+        <div class="header-date center">
+            <span id="header-date" class="center"></span>
+        </div>
+
+        <div id="time">
+            <time></time>
+        </div>
+
     </header>
 
     <main>
@@ -118,7 +149,50 @@
             </section>
         </div>
 
+        <div class="photo-card">
+            <h2>Manila</h2>
+            <img src="images/discover images/placeholder.jpg" src="images/discover images/1440px-Manila_Bay_Sunset_(2).jfif" loading="lazy" width="700" height="550">
+            <section class="stats">
+                <h2>City of Manila</h2>
+                <p>Population: <span id="census">1,846,513 people</span></p>
+                <p>Origin: <span id="origin">Manila was an active trade partner with the Song and Yuan dynasties of China</span></p>
+                <p>Location: <span id="location"></span></p>
+                <p>Popularity: <span id="popularity">First Chartered City in the Country.</span></p>
+            <p class="left-alg">
+                The City of Manila is situated on the eastern shore of Manila Bay, on the western coast of Luzon, 1,300 km (810 mi) from mainland Asia. The protected harbor on which Manila lies is regarded as the finest in Asia.[114] The Pasig River flows through the middle of city, dividing it into north and south.[115][116] The overall grade of the city's central, built-up areas is relatively consistent with the natural flatness of the natural geography, generally exhibiting only slight differentiation. Almost all of Manila sits on top prehistoric alluvial deposits built by the waters of the Pasig River and on land reclaimed from Manila Bay. Manila's land has been substantially altered by human intervention; there has been considerable land reclamation along the waterfronts since the early-to-mid twentieth century. Some of the city's natural variations in topography have been leveled. As of 2013, Manila had a total area of 42.88 square kilometres (16.56 sq mi)
+            </p>
+            </section>
+        </div>
 
+        <div class="photo-card">
+            <h2>Tagaytay</h2>
+            <img src="images/discover images/placeholder.jpg" src="images/discover images/1440px-Manila_Bay_Sunset_(2).jfif" loading="lazy" width="700" height="550">
+            <section class="stats">
+                <h2>Tagaytay City</h2>
+                <p>Population: <span id="census">85,330 people</span></p>
+                <p>Origin: <span id="origin">The ridges and forests of Tagaytay become the sanctuary for revolutionaroes including nearby provinces.</span></p>
+                <p>Location: <span id="location"></span></p>
+                <p>Popularity: <span id="popularity">First Chartered City in the Country.</span></p>
+            <p class="left-alg">
+                Tagaytay is considered to be the second Summer capital of the Philippines with the first being Baguio due to its cool climate thus is a favored destination from those relatively more humid areas of the Philippines. Tagaytay is also a destination for tourists seeking views of Taal Volcano and the surrounding lake. In 2015, the Department of Tourism cited Tagaytay as the top tourist destination in the Calabarzon region.
+            </p>
+            </section>
+        </div>
+
+        <div class="photo-card">
+            <h2>Tagaytay</h2>
+            <img src="images/discover images/placeholder.jpg" src="images/discover images/1440px-Manila_Bay_Sunset_(2).jfif" loading="lazy" width="700" height="550">
+            <section class="stats">
+                <h2>Tagaytay City</h2>
+                <p>Population: <span id="census">85,330 people</span></p>
+                <p>Origin: <span id="origin">The ridges and forests of Tagaytay become the sanctuary for revolutionaroes including nearby provinces.</span></p>
+                <p>Location: <span id="location"></span></p>
+                <p>Popularity: <span id="popularity">First Chartered City in the Country.</span></p>
+            <p class="left-alg">
+                Tagaytay is considered to be the second Summer capital of the Philippines with the first being Baguio due to its cool climate thus is a favored destination from those relatively more humid areas of the Philippines. Tagaytay is also a destination for tourists seeking views of Taal Volcano and the surrounding lake. In 2015, the Department of Tourism cited Tagaytay as the top tourist destination in the Calabarzon region.
+            </p>
+            </section>
+        </div>
 
     </main>
 
@@ -126,7 +200,7 @@
     <!--Footer details-->
 <footer id="footer1">
     <picture>
-    <img class="footer-logo" src="images/chamber2logo.png" alt="chamber logo">
+    <img class="footer-logo" src="images/chamber2logo.png" alt="chamber logo" height="30">
     </picture>
 
     <div class="contact-info">
@@ -149,7 +223,7 @@
 
 <script src="scripts/chamber.js"></script> 
 <script src="scripts/windchill.js"></script>
-<script src="scripts/lazyload.js"></script>
+<script src="scripts/scripts.js"></script>
 
     </body>
     </html>

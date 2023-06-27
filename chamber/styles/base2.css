@@ -169,6 +169,7 @@ header {
 
 .header-logo {
   width: 55px;
+  padding: 20px;
 }
 
 .header-heading {
@@ -646,7 +647,7 @@ header .expanded {
 /* MAIN DISCOVER */
 /******************/
 
-.discover-main {
+.discover {
   display: flex;
   flex-direction: column;
   gap: var(--white-space);
@@ -656,14 +657,14 @@ header .expanded {
   margin: 0 auto;
 }
 
-.discover-main .demographics {
+.discover .demographics {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: var(--white-space);
 }
 
-.discover-main .user-card {
+.discover .user-card {
   width: 100%;
   height: 200px;
 }
@@ -693,8 +694,8 @@ header .expanded {
   color: var(--secondary02);
 }
 
-.discover-main .demographics-card,
-.discover-main .user-card {
+.discover .demographics-card,
+.discover .user-card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -704,7 +705,7 @@ header .expanded {
   background-color: var(--contrast-font-color01);
 }
 
-.discover-main .card-content-wrapper {
+.discover .card-content-wrapper {
   width: fit-content;
 }
 
@@ -712,25 +713,25 @@ header .expanded {
   color: var(--primary02);
 }
 
-.discover-main .demographics-card p:first-child {
+.discover .demographics-card p:first-child {
   color: var(--font-color);
   font-size: 0.8rem;
   width: fit-content;
 }
 
-.discover-main .demographics-card p:last-child {
+.discover .demographics-card p:last-child {
   width: fit-content;
   font-weight: 700;
   font-size: 2.6rem;
 }
 
-.discover-main .photos {
+.discover .photo-card {
   display: flex;
   flex-direction: column;
   gap: var(--white-space);
 }
 
-.discover-main .photo-card {
+.discover .photo-card {
   border-radius: var(--default-border-radius);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   padding: var(--white-space) 0.1px;
@@ -770,46 +771,46 @@ header .expanded {
   border-radius: var(--default-border-radius);
 }
 
-.discover-main .photo-card:nth-child(odd) {
+.discover .photo-card:nth-child(odd) {
   background-color: var(--primary01);
   color: var(--contrast-font-color02);
 }
 
-.discover-main .photo-card:nth-child(3) a {
+.discover .photo-card:nth-child(3) a {
   color: var(--contrast-font-color01);
 }
 
-.discover-main .photo-card:nth-child(3) a:visited {
+.discover .photo-card:nth-child(3) a:visited {
   color: var(--warn);
 }
 
-.discover-main .photo-card h2 {
+.discover .photo-card h2 {
   margin: var(--white-space);
 }
 
-.discover-main .photo-card p {
+.discover .photo-card p {
   margin: var(--white-space);
   max-width: 700px;
 }
 
-.discover-main .photo-card .left-alg-p {
+.discover .photo-card .left-alg-p {
   text-align: left;
 }
 
-.discover-main .photo-card button {
+.discover .photo-card button {
   font-size: 0.95rem;
   margin: var(--white-space) 0;
   min-width: 160px;
 }
 
-.discover-main .photo-card img[data-image] {
+.discover .photo-card img[data-image] {
   filter: blur(4px);
   border-radius: 0px 0px;
   width: 100%;
   max-width: 50px;
 }
 
-.discover-main .photo-card img {
+.discover .photo-card img {
   filter: blur(0);
   border-radius: var(--default-border-radius);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
@@ -973,11 +974,15 @@ main .display-options .selected {
 /**********/
 footer {
   margin-top: var(--white-space);
+  background-color: #184457;
+  color: white;
+  padding: 20px;
 }
 
 footer p {
   margin: 0;
   font-size: 0.7em;
+
 }
 
 .footer-logo {
@@ -1063,4 +1068,10 @@ footer .footer-contact p img {
 
 .footer-copyright p:last-child {
   display: none;
+}
+
+#footer2 {
+  background-color: rgb(5, 145, 191);
+  align-items: center;
+  text-align: center;
 }
