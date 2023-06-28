@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Ubuntu:ital@1&display=swap');
+
+h1, h2, h3, h4, h5, h6, .title-link {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+
+p , li{
+  font-family: 'Roboto Mono', monospace, sans-serif;
+}
+
+body {
+ background-color: lightblue;
+}
+
+.cards section img, .cards section .div1, .cards section .div2{
+    margin: 0 auto;
+}
+
+.cards section .div1, .cards section .div2{
+    text-align: center;
+    /*border: 5px dashed rgb(78, 170, 246);*/
+    margin: 5px;
+}
+
+.cards section img{
+    border-style:groove;
+}
+
+h1 {
+    color: #fdfdff;
+    text-align: center;
+    font-size: 50px;
+}
+
+h2 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 40px;
+    margin: 10px;
+}
+
+header, footer {
+    color: #fdfdff;
+    background-color: #10254b ;
+    text-align: center;
+    border: 15px;
+}
+
+.cards section {
+   display: flex;
+   flex-direction: column;
+   border: 25px;
+   margin: 2%;
+   padding: 2%;
+   border: 8px solid rgb(6, 137, 154);
+   background-color: #3c6e6ed5;
+   line-height: 2px;
+}
+
+@media only screen and (min-width: 800px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1650px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media only screen and (min-width: 2200px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
