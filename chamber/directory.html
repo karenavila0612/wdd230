@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cortado Chamber of Commerce</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/base2.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!--Header Details Here-->
+    <div calss="menu-background" onclick="toggleMenu()"></div>
+    <header>
+        <div class="announcement-banner" id="announcement-banner">
+            <p>Come and join the Chamber! Meet and greet every Thursday, 7PM.</p>
+        </div>
+        
+        <div class="header-title-wrapper">
+            <img class="header-logo-center" src="images/chamber2logo.png" alt="sitelogo" width="75" height="75">
+            <div class="header-title-title">
+                <h1>Cortado</h1>
+                <p class="header-subtitle">Chamber of Commerce</p>
+            </div>
+        </div>
+
+        <div class="hamburger-menu">
+            <ul>
+                <li><a href="index2.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+
+        <div class="header-social-wrapper">
+            <div class="header-social">
+                <img src="images/facebook.png" alt="faccebook" width="30" height="30">
+                <img src="images/twitter.png" alt="faccebook" width="30" height="30">
+            </div>
+
+            <div class="header-menu center">
+                <button id="menu-button" class="menu-button" onclick="toggleMenu();" aria-label="Main Menu">
+                    <svg viewBox="0 0 100 100">
+                      <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,
+                        29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,
+                        77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,
+                        81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,
+                        25.000058" />
+                      <path class="line line2" d="M 20,50 H 80" />
+                      <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,
+                        70.999954 94.498839, 71.182648 94.532987,33.288669 94.543142,
+                        22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,
+                        18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,
+                        74.999942" />
+                    </svg>
+                  </button> 
+                  <div class="hamburger-menu">
+                    <ul>
+                      <li><a href="index2.html">Home</a></li>
+                      <li><a href="discover.html">Discover</a></li>
+                      <li><a href="directory.html">Directory</a></li>
+                      <li><a href="join.html">Join</a></li>
+                      <li><a href="">Contact</a></li>
+                      <li><a href="../">Main</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+
+        <div class="header-date center">
+            <span id="header-date" class="center"></span>
+        </div>
+
+        <div id="time">
+            <time></time>
+        </div>
+
+        </header>
+
+        <main>
+
+            <div id="grid-list">
+            <div id="dir-buttons">
+            <button id="dir-nav">
+                <a href="directory.html"><img id="grid-button" src="images/directoryimages/grid.png"></a>
+            </button>
+
+            <button id="dir-navv">
+                <a href="directory.html"><img id="grid-button" src="images/directoryimages/list.png"></a>  
+            </button>
+            
+            </div>
+
+            <div id="business-cards"></div>
+
+            </div>
+
+        </main>
+
+        <!--Footer details-->
+<footer id="footer1">
+    <picture>
+    <img class="footer-logo" src="images/chamber2logo.png" alt="chamber logo" height="30">
+    </picture>
+
+    <div class="contact-info">
+        <h3>Cortado Chamber of Commerce</h3>
+        <p>Makati City, Philippines 1000</p>
+    <div class="footings2">
+        <p>karenavila0612@byui.edu</p>
+        <p>+639369622254</p>
+        <a href="#" target="_blank">
+        <p class="locationpin">Location Map</p>
+         </a>
+    </div>
+    </div>
+</footer>
+
+<div id="footer2">
+    <p></p>&copy;2023 | Cortado Chamber of Commerce | Karen Avila Cortado | Last Updated: <span id="lastModified"></span>
+    <a id="map" href="site-map.html">Site Map</a>
+</div>
+
+<script src="scripts/chamber.js"></script> 
+<script src="scripts/windchill.js"></script>
+<script src="scripts/scripts.js"></script>
+<script src="scripts/directory.js"></script>
+
+</body>
+</html>

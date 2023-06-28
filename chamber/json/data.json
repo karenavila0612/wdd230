@@ -1,0 +1,75 @@
+{
+    "businesses": [
+        {
+            "name": "Global Investment Capital",
+            "address": "11th Avenue Fort Bonifacio Global City, Taguig, PH",
+            "phone number" : "(02) 856 1798",
+            "website":"www.globalinvest.com",
+            "logo": "images/directoryimages/globalinvestment.png",
+            "level": "Gold"
+        },
+
+        {
+            "name": "CLD Constuction Company",
+            "address": "The podium ADB Ave, Mandaluyong, Metro Manila, PH",
+            "phone number" : "(02) 637 4367",
+            "website":"www.cldconstructcompany.com",
+            "logo": "images/directoryimages/CLD Construction.png",
+            "level": "Gold"
+        },
+
+        {
+            "name": "Eagles Club Philippines",
+            "address": "Unit G-8 Cityland Makati Executive Tower, Senator Gil Puyat Street, Makati City, Metro Manila, PH",
+            "phone number" : "(02) 218 3665",
+            "website":"www.cldconstructcompany.com",
+            "logo": "images/directoryimages/CLD Construction.png",
+            "level": "Gold"
+        },
+
+        {
+            "name": "Food Talk",
+            "address": " 26 Sta. Ana Drive Bgy. Sun Valley 1700, Paranaque City, Metro Manila, PH",
+            "phone number" : "(82) 453 5127",
+            "website":"www.foodtalk.com",
+            "logo": "images/directoryimages/foodtalk.png",
+            "level": "Bronze"
+        },
+
+        {
+            "name": "Metropolitan Bank",
+            "address": "G/F Fatima Lapasan Building, Cagayan De Oro, Cagayan de Oro City, PH",
+            "phone number" : "(+63) 905 326 4958",
+            "website":"www.metrobank.com",
+            "logo": "images/directoryimages/metropolitanbank.png",
+            "level": "Silver"
+        },
+
+        {
+            "name": "Movers Inc",
+            "address": "1242 J. Bacobo, Manila, PH",
+            "phone number" : "(+63) 2 523-1742",
+            "website":"www.moversinc.com",
+            "logo": "images/directoryimages/movers.png",
+            "level": "Silver"
+        },
+    
+        {
+            "name": "Paradosso Social Marketing Corporation",
+            "address": "Don Mariano Marcos Ave, Quezon City, Metro Manila, PH",
+            "phone number" : "(2) 951 8081",
+            "website":"www.paradossomarketing.com",
+            "logo": "images/directoryimages/paradossocialmarketing.png",
+            "level": "Bronze"
+        },
+
+        {
+            "name": "The British School",
+            "address": "Ortigas Avenue, Ugong, Pasig City, 1604, Metro Manila, PH",
+            "phone number" : "(2) 793 0088",
+            "website":"www.thebritishschool.edu",
+            "logo": "images/directoryimages/thebritishschool.png",
+            "level": "Bronze"
+        },
+    ]
+}
