@@ -1,4 +1,4 @@
-const busInfo = 'https://karenavila0612.github.io/wdd230/chamber/scripts/data.json';
+const busInfo = 'https://karenavila0612.github.io/wdd230/chamber/json/data.json';
 
 
 async function getBusData(busInfo) {
