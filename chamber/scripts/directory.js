@@ -1,6 +1,5 @@
 const busInfo = 'https://karenavila0612.github.io/wdd230/chamber/json/data.json';
 
-
 async function getBusData(busInfo) {
     const response = await fetch(busInfo);
     if (response.ok) {
@@ -29,8 +28,6 @@ const createCards = (business) => {
         icon.setAttribute('loading', 'lazy');
         icon.setAttribute('width', '100');
         icon.setAttribute('height', '100');
-
-        
 
         fullInfo.innerHTML = `${business.address}<br>${business.phone}<br><a href='${business.url}'>${business.url}</a><p>${business.other}</p>`;
 
